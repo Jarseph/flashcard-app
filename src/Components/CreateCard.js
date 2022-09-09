@@ -3,7 +3,7 @@ import { Link, useHistory, useParams } from "react-router-dom";
 import { createCard, readDeck } from "../utils/api/index";
 import CardForm from "./CardForm";
 
-function AddCard() {
+function CreateCard() {
     const { deckId } = useParams();
     const history = useHistory();
     const initialState = {
@@ -71,4 +71,4 @@ function AddCard() {
     );
 }
 
-export default AddCard;
+export default CreateCard;

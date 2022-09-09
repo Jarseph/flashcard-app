@@ -74,7 +74,7 @@ function Deck() {
         history.push(`/decks/${deckId}/study`);
     }
 
-    async function handleAddCard() {
+    async function handleCreateCard() {
         history.push(`/decks/${deckId}/cards/new`);
     }
 
@@ -108,7 +108,7 @@ function Deck() {
                             Study
                         </button>
                         <button
-                            onClick={() => handleAddCard()}
+                            onClick={() => handleCreateCard()}
                             className="btn btn-primary mx-1"
                         >
                             Add Cards
