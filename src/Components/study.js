@@ -21,7 +21,7 @@ function Study() {
             };
         }
         fetchData();
-    }, []);
+    }, [setDeck, setCards, deckId]);
 
     function nextCard(index, total) {
         console.log(index);
@@ -67,7 +67,7 @@ function Study() {
 
     function enoughCards() {
         return (
-            <div className="card">
+            <div className="card"> 
                 {cards.map((card, index) => {
                     if (index === cardNumber - 1) {
                         return (

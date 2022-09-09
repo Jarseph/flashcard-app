@@ -26,7 +26,7 @@ function Deck() {
       };
     }
     fetchData();
-  }, []);
+  }, [setDeck, setCards, deckId]);
   
   async function handleDeleteDeck(deck) {
     if(
@@ -160,11 +160,6 @@ function Deck() {
 }
 
 export default Deck;
-  
-  
-  
-  
-  
   
   
   

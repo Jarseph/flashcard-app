@@ -9,6 +9,7 @@ function AddCard() {
     const initialState = {
         front: "",
         back: "",
+        deckId
     };
 
     const [newCard, setNewCard] = useState(initialState);
@@ -28,7 +29,7 @@ function AddCard() {
             };
         }
         fetchData();
-    }, []);
+    }, [setDeck, setNewCard, deckId]);
 
     function handleChange({ target }) {
         setNewCard({
@@ -65,7 +66,7 @@ function AddCard() {
                 </li>
                 <li className="breadcrumb-item active">Add Card</li>
             </ol>
-            <CardForm handleSubmit={ handleSubmit } handleChange={ handleChange } handleCancel={ handleCancel } title="Add Card"/>
+            <CardForm handleSubmit={ handleSubmit } handleChange={ handleChange } handleDone={ handleDone } title="Add Card"/>
         </div>
     );
 }

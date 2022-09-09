@@ -1,6 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 
-function CardForm({ handleSubmit, handleChange, handleCancel, title}) {
+function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title}) {
+
+    const initialDeckState = {
+        id: "",
+        name: "",
+        description: "",
+    };
+    
+    const [card] = useState(initialDeckState);
+
   return (
     <div>
         <form onSubmit={handleSubmit}>

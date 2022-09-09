@@ -26,7 +26,7 @@ function EditDeck() {
             };
         }
         fetchData();
-    }, []);
+    }, [setDeck, deckId]);
 
     function handleChange({ target }) {
         setDeck({

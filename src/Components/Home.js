@@ -20,7 +20,7 @@ function Home() {
       };
     }
   fetchData();
-  }, []);
+  }, [setDecks]);
   
   async function handleDelete(deck) {
     if (

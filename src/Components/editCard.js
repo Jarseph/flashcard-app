@@ -19,6 +19,7 @@ function EditCard() {
     };
 
     const [card, setCard] = useState(initialDeckState);
+    
     const [deck, setDeck] = useState(initialCardState);
 
     useEffect(() => {
@@ -43,7 +44,7 @@ function EditCard() {
             };
         }
         fetchData();
-    }, []);
+    }, [setCard, setDeck, cardId, deckId]);
 
     function handleChange({ target }) {
         setCard({
