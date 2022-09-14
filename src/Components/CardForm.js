@@ -2,8 +2,6 @@ import React, {useState} from "react";
 
 function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title, card}) {
 
-
-
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -16,7 +14,6 @@ function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title,
                         name="front"
                         className="form-control"
                         onChange={handleChange}
-                        type="text"
                         value={card.front}
                     />
                 </div>
@@ -27,8 +24,8 @@ function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title,
                         name="back"
                         className="form-control"
                         onChange={handleChange}
-                        type="text"
                         value={card.back}
+                        type="text"
                     />
                 </div>
                 <button
