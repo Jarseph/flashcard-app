@@ -18,9 +18,9 @@ function EditCard() {
         deckId: "",
     };
 
-    const [card, setCard] = useState(initialDeckState);
+    const [card, setCard] = useState(initialCardState);
     
-    const [deck, setDeck] = useState(initialCardState);
+    const [deck, setDeck] = useState(initialDeckState);
 
     useEffect(() => {
         async function fetchData() {
@@ -76,7 +76,7 @@ function EditCard() {
                 </li>
                 <li className="breadcrumb-item active">Edit Card {cardId}</li>
             </ol>
-            <CardForm handleSubmit={ handleSubmit } handleChange={ handleChange } handleCancel={ handleCancel } title="Edit Card"/>
+            <CardForm card={card} handleSubmit={ handleSubmit } handleChange={ handleChange } handleCancel={ handleCancel } title="Edit Card"/>
         </div>
     );
 }

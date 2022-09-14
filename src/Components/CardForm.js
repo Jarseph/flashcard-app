@@ -1,14 +1,8 @@
 import React, {useState} from "react";
 
-function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title}) {
+function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title, card}) {
 
-    const initialDeckState = {
-        id: "",
-        name: "",
-        description: "",
-    };
-    
-    const [card] = useState(initialDeckState);
+
 
   return (
     <div>
