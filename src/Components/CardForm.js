@@ -14,7 +14,7 @@ function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title,
                         name="front"
                         className="form-control"
                         onChange={handleChange}
-                        value={card.front}
+                        value={card?.front}
                     />
                 </div>
                 <div className="form-group">
