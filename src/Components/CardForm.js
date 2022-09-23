@@ -24,7 +24,7 @@ function CardForm({ handleSubmit, handleChange, handleCancel, handleDone, title,
                         name="back"
                         className="form-control"
                         onChange={handleChange}
-                        value={card.back}
+                        value={card?.back}
                         type="text"
                     />
                 </div>
